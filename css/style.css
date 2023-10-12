@@ -117,35 +117,37 @@ a {
   margin-bottom: 110px;
 }
 .header__burger {
-  width: 60px;
-  height: 60px;
-  background: white;
-  border-radius: 20%;
+  background: transparent;
+  border: limegreen 4px double;
+  width: 70px;
+  height: 70px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  border: 5px solid limegreen;
+  justify-content: center;
+  border-radius: 20%;
 }
 .header__burger:hover {
-  border: 5px solid black;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
+  border: white 4px double;
   background: transparent;
+  transition-duration: 0.3s;
+  transform: rotate(90deg);
+  border-radius: 40%;
 }
 .header__line {
-  text-align: center;
-  justify-content: center;
-  width: 30px;
+  width: 40px;
   height: 4px;
-  background: black;
+  background: white;
   margin-top: 3px;
   margin-bottom: 3px;
+  display: flex;
+  transition-duration: 0.3s;
 }
 .header__line:hover {
-  background: white;
-  transform: scale(1, -1);
-  transition-duration: 0.5s;
+  background: limegreen;
+  transition-duration: 0.3s;
+  transform: scale(-1, 1);
+  border-radius: 40%;
 }
 .header__title {
   font-size: 60px;
@@ -464,6 +466,7 @@ a {
 .contacs__text {
   line-height: 140%;
   font-weight: 900;
+  cursor: pointer;
 }
 .contacs__text:hover {
   color: red;
